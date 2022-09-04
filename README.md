@@ -10,8 +10,8 @@ Instructions to this assignment can be found [here](https://it3049c.github.io/Ma
 - [x] This task is complete.
 ```
 - [x] All Unit tests passed.
-- [ ] filled out the self-evaluation.
-- [ ] filled out the self-reflection.
+- [x] filled out the self-evaluation.
+- [x] filled out the self-reflection.
 
 ## Self-Evaluation: 
 (For this assignment, there was 22 exercises checked by 68 automated checks)
