@@ -21,13 +21,16 @@ function filterOut(arr, item) {
   let index = arr.indexOf(item);
   if (index >= 0) {
     arr.splice(index, 1);
+    return filterOut(arr, item);
+  } else {
+    return arr;
   }
-  return arr;
 }
 
 // Append: you should be able to add an item to the end of an array
 function append(arr, item) {
-  return arr.append(item);
+  arr.push(item);
+  return arr;
 }
 
 // Truncate: you should be able to remove the last item of an array
@@ -45,15 +48,18 @@ function concat(arr1, arr2) {
 // Insert: you should be able to add an item at the specified index of an array
 // hint: use splice and pay attention to the return value
 function insert(arr, item, index) {
-  return arr.splice(index, 0, item);
+  arr.splice(index, 0, item)
+  return arr;
 }
 
 // Square: you should be able to square each number in an array
 // hint: use .map
 // Example: [1,2,4,5] => [1,4,16,25]
 function square(arr) {
-  for(num in arr){
-    num = num*num
+  let index = 0;
+  while (index < arr.length){
+    arr[index] = Math.pow(arr[index], 2);
+    index = index + 1;
   }
   return arr;
 }

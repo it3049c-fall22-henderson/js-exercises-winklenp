@@ -14,10 +14,10 @@ const personObject = {
   class_of: 2022,
 
   full_name(){
-    return this.first_name + this.last_name;
+    return this.first_name +" "+ this.last_name;
   },
   introduction(){
-    return this.full_name + "of" + this.class_of + "Welcomes you";
+    return this.full_name() + "of" + this.class_of + "Welcomes you";
   }
 
 };
